@@ -1,0 +1,38 @@
+{
+  "orders": [
+    {
+      "id": 1,
+      "name": "Shelly",
+      "ingredients": [
+        "beans",
+        "lettuce",
+        "carnitas",
+        "queso fresco",
+        "jalapeno"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Dale Cooper",
+      "ingredients": [
+        "steak",
+        "pico de gallo",
+        "lettuce",
+        "carnitas",
+        "queso fresco",
+        "jalapeno"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Log lady",
+      "ingredients": [
+        "sofritas",
+        "beans",
+        "sour cream",
+        "carnitas",
+        "queso fresco"
+      ]
+    }
+  ]
+}
