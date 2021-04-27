@@ -13,6 +13,10 @@ class App extends Component {
   }
 
   componentDidMount() {
+    this.updateOrders()
+  }
+
+  updateOrders = () => {
     getOrders()
       .then(data => this.setState({orders: data.orders}))
       .catch(err => console.error('Error fetching:', err));
@@ -23,7 +27,7 @@ class App extends Component {
       <main className="App">
         <header>
           <h1>Burrito Builder</h1>
-          <OrderForm />
+          <OrderForm updateOrders={this.updateOrders}/>
         </header>
 
         <Orders orders={this.state.orders}/>
