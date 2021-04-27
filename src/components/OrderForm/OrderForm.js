@@ -10,7 +10,6 @@ class OrderForm extends Component {
     };
   }
 
-
   handleSubmit = e => {
     e.preventDefault();
     this.clearInputs();
@@ -25,6 +24,10 @@ class OrderForm extends Component {
     if(!this.state.ingredients.includes(e.target.name)){
       this.setState({ingredients: [...this.state.ingredients, e.target.name]})
     }
+  }
+
+  handleNameChange = e => {
+    this.setState({name: e.target.value})
   }
 
   render() {
